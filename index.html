@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title> image gallery </title>
+</head>
+<body>
+    <h1> Love you Angel!!! </h1>
+    <h6> click and zoom in  </h6>
+
+    <div class="myProducts">
+        <div class="myProducts-gallery">
+            <img src="img1.jpeg"
+                alt="click here"
+                onclick="myImageFunction(this)">
+            <img src="img2.jpeg"
+                alt="click here"
+                onclick="myImageFunction(this)">
+            <img src="img3.jpeg"
+                alt="click here"
+                onclick="myImageFunction(this)">
+            <img src="img4.jpeg"
+                alt="click here"
+                onclick="myImageFunction(this)">
+        </div>
+        <div class="image-container">
+            <img id="img-Box"
+            src="img5.jpeg"
+            alt="click here">
+        </div>
+    </div>
+
+    <script>
+        function myImageFunction(productSmallImg){
+            var productFullImg = document.getElementById("img-Box");
+            productFullImg.src = productSmallImg.src;
+        }
+    </script>
+
+
+
+</body>
+</html>
